@@ -3,8 +3,8 @@ import json,time
 import os
 import wget 
 app = Flask(__name__)
-#@app.route('/',methods=["GET","POST","DELETE"])
-@app.route('/<string:id>',methods=["GET","POST","DELETE"])
+#@app.route('/',methods=["GET","POST"])
+@app.route('/<string:id>',methods=["GET","POST"])
 def dat_traf(id):
     if request.method=='POST':
         data=request.data
