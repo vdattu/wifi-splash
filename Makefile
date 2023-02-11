@@ -78,3 +78,4 @@ deb: clean
 	cd dist && tar cjf nodogsplash_$(DEBVERSION).orig.tar.bz2 nodogsplash-$(DEBVERSION) && cd -
 	cd dist/nodogsplash-$(DEBVERSION) && dpkg-buildpackage -us -uc && cd -
 	rm -rf dist/nodogsplash-$(DEBVERSION)
+
