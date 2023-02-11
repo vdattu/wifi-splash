@@ -5,7 +5,7 @@ dist: trusty
 before_script:
   - bash ./resources/build_libmicrohttpd.sh --compile
 
-# install: "pip install Sphinx"
+# install module: "pip install Sphinx"
 
 script:
  - make checkstyle
@@ -21,3 +21,4 @@ addons:
   apt:
     packages:
       - astyle
+
