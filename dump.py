@@ -11,10 +11,10 @@ def dat_traf(id):
         dat_lst=eval(data)
         print(dat_lst)
         if dat_lst:
-            path=os.path.join("C:/Users/Acer/Desktop/wifi-splash/resources/image",id)
-            os.remove(path)
+            pat=os.path.join("path/image",id)
+            os.remove(pat)
             for j in dat_lst:
-                wget.download(j,'C://Users//Acer//Desktop//wifi-splash//resources//image')
+                wget.download(j,'path//image')
                 print("list downloaded")
             return "--successfully downloaded-----"
         else:
